@@ -23,11 +23,7 @@ if (uncertain === "boolean") {
   console.log("string");
 }
 
-//javascript
-
-function warmUser(): void {
-  console.log("This is my warning message ");
-}
+//javascript\
 
 // function getName() : any{
 //     return 0;
@@ -39,7 +35,6 @@ function warmUser(): void {
 // function error(message: string): never {
 //   throw new Error(message);
 // }
-
 
 // function infiniteLoop(): never {
 //   while (true) {}
@@ -59,22 +54,19 @@ function warmUser(): void {
 //   return true;
 // }
 
-
-
 // mongodb+srv://gulnar-hqvrd:b2ZVWHd3ihoD3zVq@cluster0.kvvvhva.mongodb.net/
 
 // Enum
 
-// enum Status {
-//     None ,
-//     Active,
-//     Passive,
-//     Deleted,
-//     Modified,
-//     Holiday,
-//     Hired,
-// }
-
+enum Status {
+  None,
+  Active,
+  Passive,
+  Deleted,
+  Modified,
+  Holiday,
+  Hired,
+}
 
 // class Employee {
 //     status : Status;
@@ -82,3 +74,57 @@ function warmUser(): void {
 //         this.status = Status.Active
 //     }
 // }
+
+// enum Color {
+//   Red,
+//   Blue,
+//   Green,
+// }
+
+// let color = Color.Red;
+// console.log(color);
+
+// let color2:string = Color[0]
+// console.log(color2);
+
+// enum Color {
+//   Red = 4,
+//   Blue = 7,
+//   Green = 9,
+// }
+
+// let color = Color.Red;
+// console.log(color);
+
+// let color2:string = Color[7]
+// console.log(color2);
+
+enum Colors {
+  Red = "Qirmizi",
+  Blue = "Mavi",
+  Green = "Yasil",
+  Yellow = "Sari",
+  Pink = "Cehrayi",
+  Tomoto = "Pamidor",
+}
+
+// let c :string = Colors.Red;
+// console.log(c);
+
+interface IEmployee {
+  firstname: string;
+  lastname: string;
+  age: number;
+  status: Status;
+  mail: string;
+  address: string;
+}
+
+let employee: IEmployee = {
+  firstname: "Gulnar",
+  lastname: "Hagverdiyeva",
+  mail: "gulnarhagverdiyevaa@idda.az",
+  age: 22,
+  address: "Baku , Azerbaijan",
+  status: Status.Active,
+};
