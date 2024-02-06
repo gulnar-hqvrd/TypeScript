@@ -128,3 +128,57 @@ let employee: IEmployee = {
   address: "Baku , Azerbaijan",
   status: Status.Active,
 };
+
+class Calishan implements IEmployee {
+  firstname: string;
+  lastname: string;
+  mail: string;
+  age: number;
+  address: string;
+  status: Status;
+
+  constructor (
+    firstname: string,
+    lastname: string,
+    mail: string,
+    age: number,
+    address: string,
+
+  ){
+    this.firstname = firstname,
+    this.lastname = lastname,
+    this.age = age,
+    this.mail = mail,
+    this.address = address
+    this.status = Status.Active
+
+  }
+}
+
+
+class Student implements IEmployee {
+  firstname: string;
+  lastname: string;
+  mail: string;
+  age: number;
+  address: string;
+  status: Status;
+  studentnumber : string;
+
+  constructor (
+    firstname: string,
+    lastname: string,
+    mail: string,
+    age: number,
+    address: string,
+studentnumber : string
+  ){
+    this.firstname = firstname,
+    this.lastname = lastname,
+    this.age = age,
+    this.mail = mail,
+    this.address = address
+    this.status = Status.Active
+    this.studentnumber = studentnumber
+  }
+}
