@@ -120,14 +120,14 @@ interface IEmployee {
   address: string;
 }
 
-let employee: IEmployee = {
-  firstname: "Gulnar",
-  lastname: "Hagverdiyeva",
-  mail: "gulnarhagverdiyevaa@idda.az",
-  age: 22,
-  address: "Baku , Azerbaijan",
-  status: Status.Active,
-};
+// let employee: IEmployee = {
+//   firstname: "Gulnar",
+//   lastname: "Hagverdiyeva",
+//   mail: "gulnarhagverdiyevaa@idda.az",
+//   age: 22,
+//   address: "Baku , Azerbaijan",
+//   status: Status.Active,
+// };
 
 class Calishan implements IEmployee {
   firstname: string;
@@ -137,24 +137,21 @@ class Calishan implements IEmployee {
   address: string;
   status: Status;
 
-  constructor (
+  constructor(
     firstname: string,
     lastname: string,
     mail: string,
     age: number,
-    address: string,
-
-  ){
-    this.firstname = firstname,
-    this.lastname = lastname,
-    this.age = age,
-    this.mail = mail,
-    this.address = address
-    this.status = Status.Active
-
+    address: string
+  ) {
+    (this.firstname = firstname),
+      (this.lastname = lastname),
+      (this.age = age),
+      (this.mail = mail),
+      (this.address = address);
+    this.status = Status.Active;
   }
 }
-
 
 class Student implements IEmployee {
   firstname: string;
@@ -163,22 +160,22 @@ class Student implements IEmployee {
   age: number;
   address: string;
   status: Status;
-  studentnumber : string;
+  studentnumber: string;
 
-  constructor (
+  constructor(
     firstname: string,
     lastname: string,
     mail: string,
     age: number,
     address: string,
-studentnumber : string
-  ){
-    this.firstname = firstname,
-    this.lastname = lastname,
-    this.age = age,
-    this.mail = mail,
-    this.address = address
-    this.status = Status.Active
-    this.studentnumber = studentnumber
+    studentnumber: string
+  ) {
+    (this.firstname = firstname),
+      (this.lastname = lastname),
+      (this.age = age),
+      (this.mail = mail),
+      (this.address = address);
+    this.status = Status.Active;
+    this.studentnumber = studentnumber;
   }
 }
